@@ -1,0 +1,13 @@
+{
+  "name": "MemCachier Rails Tutorial App",
+  "description": "Ruby-on-Rails (5.1) app illustrating how to use MemCachier",
+  "keywords": ["ruby", "rails", "memcache", "memcachier", "caching", "performance", "dalli" ],
+  "logo": "https://www.memcachier.com/assets/logo-large.png",
+  "image": "heroku/ruby",
+  "website": "https://www.memcachier.com",
+  "repository": "https://github.com/memcachier/examples-rails-heroku",
+  "addons": [ "memcachier", "heroku-postgresql" ],
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  }
+}
