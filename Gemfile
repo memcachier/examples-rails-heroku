@@ -10,6 +10,8 @@ ruby '2.5.0'
 # Memcache client
 gem 'dalli'
 gem 'memcachier'
+# Caching
+gem 'actionpack-action_caching'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
