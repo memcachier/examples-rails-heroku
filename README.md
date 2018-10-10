@@ -50,7 +50,7 @@ Alternatively, you can pass these options to config.cache_store (also
 in production.rb):
 
 ```.ruby
-config.cache_store = :dalli_store, ENV["MEMCACHIER_SERVERS"],
+config.cache_store = :mem_cache_store, ENV["MEMCACHIER_SERVERS"],
                     {:username => ENV["MEMCACHIER_USERNAME"],
                      :password => ENV["MEMCACHIER_PASSWORD"]}
 ```
@@ -60,7 +60,7 @@ config.cache_store = :dalli_store, ENV["MEMCACHIER_SERVERS"],
 Ensure that the following configuration option is set in production.rb:
 
 ```.ruby
-config.cache_store = :dalli_store
+config.cache_store = :mem_cache_store
 ```
 
 ## Using MemCachier
